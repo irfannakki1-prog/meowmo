@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Irfan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">Irfan.</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="family.html">My Family</a></li>
+      <li><a href="komander.html">Komander</a></li>
+      <li><a href="sport.html">Sport</a></li>
+      <li><a href="favfood.html">Fav Food</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="narrow">
+
+    <div style="animation: fadeUp 0.5s ease both;">
+      <p class="section-label">Contact</p>
+      <h1 class="page-title">Let's <span>talk.</span></h1>
+      <p class="subtitle">Have a question or just want to say hello? Fill out the form and I'll get back to you soon.</p>
+    </div>
+
+    <div class="card">
+      <form id="contactForm" novalidate>
+
+        <div class="row">
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Your first name" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Your last name" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Topic</label>
+          <div class="select-wrapper">
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>What's this about?</option>
+              <option value="project">Project / collaboration</option>
+              <option value="job">Job opportunity</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me what's on your mind…" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Send message
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"/>
+          </svg>
+        </button>
+
+        <p class="footer-note">Your information is never shared with third parties.</p>
+      </form>
+
+      <div class="success-msg" id="successMsg">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h2>Message sent!</h2>
+        <p>Thanks for reaching out, I'll be in touch soon.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (!e.target.checkValidity()) { e.target.reportValidity(); return; }
+      e.target.style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
