@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me – Irfan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">Irfan.</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html" class="active">About me</a></li>
+      <li><a href="family.html">My Family</a></li>
+      <li><a href="komander.html">Komander</a></li>
+      <li><a href="sport.html">Sport</a></li>
+      <li><a href="favfood.html">Fav Food</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PHOTO SLIDER -->
+  <div class="slider-section">
+    <div class="slider-frame"><span class="bl"></span><span class="br"></span></div>
+
+    <div class="slides" id="slides">
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('picture/me1.jpeg')"></div>
+        <img src="picture/me1.jpeg" alt="Photo 1">
+        <div class="slide-caption">
+          <p class="slide-caption-label">Photo 01</p>
+          <h3 class="slide-caption-title">The One and Only</h3>
+          <p class="slide-caption-desc">This photo was taken when I was giving a speech about discipline in my school.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('picture/me7.jpeg')"></div>
+        <img src="picture/me7.jpeg" alt="Photo 2">
+        <div class="slide-caption">
+          <p class="slide-caption-label">Photo 02</p>
+          <h3 class="slide-caption-title">Archeology Visit</h3>
+          <p class="slide-caption-desc">This photo was taken at Archeology Sungai Batu where me and my family were on vacation.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('picture/sport4.jpeg')"></div>
+        <img src="picture/sport4.jpeg" alt="Photo 3">
+        <div class="slide-caption">
+          <p class="slide-caption-label">Photo 03</p>
+          <h3 class="slide-caption-title">The Pride</h3>
+          <p class="slide-caption-desc">This photo was taken at the end of Komander Kesatria Endurance Challenge. My team got third place for Score Orienteering.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('picture/me4.jpeg')"></div>
+        <img src="picture/me4.jpeg" alt="Photo 4">
+        <div class="slide-caption">
+          <p class="slide-caption-label">Photo 04</p>
+          <h3 class="slide-caption-title">Nature!</h3>
+          <p class="slide-caption-desc">This photo was taken at Lata Lembu, Kedah after we reached the waterfalls after 5KM of hiking.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-bg" style="background-image: url('picture/me8.jpeg')"></div>
+        <img src="picture/me8.jpeg" alt="Photo 5">
+        <div class="slide-caption">
+          <p class="slide-caption-label">Photo 05</p>
+          <h3 class="slide-caption-title">Family Lunch</h3>
+          <p class="slide-caption-desc">This photo was taken by my mother when we were having lunch at IKEA — a really nice moment.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow prev" onclick="move(-1)">&#8592;</button>
+    <button class="arrow next" onclick="move(1)">&#8594;</button>
+
+    <div class="slider-dots" id="dots">
+      <button class="dot active" onclick="goTo(0)"></button>
+      <button class="dot" onclick="goTo(1)"></button>
+      <button class="dot" onclick="goTo(2)"></button>
+      <button class="dot" onclick="goTo(3)"></button>
+      <button class="dot" onclick="goTo(4)"></button>
+    </div>
+  </div>
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-left">
+        <p class="section-label">Who I am</p>
+        <h2>About Me</h2>
+        <p>Hi! I'm Irfan, a passionate student who loves nature. I love to communicate with people and learn about their backgrounds.</p>
+        <p>I believe in Islam, which is the only true religion. When I'm not working, you'll find me sleeping.</p>
+        <div class="tag-row">
+          <span class="tag">Creative</span>
+          <span class="tag">Detail-oriented</span>
+          <span class="tag">Problem solver</span>
+          <span class="tag">Team player</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="info-row"><span>Full Name</span><span>MUHAMMAD IRFAN BIN HASLAN</span></div>
+        <div class="info-row"><span>Date of Birth</span><span>13 / 11 / 2006</span></div>
+        <div class="info-row"><span>Location</span><span>KL, SELANGOR</span></div>
+        <div class="info-row"><span>Education</span><span>UiTM CAWANGAN MERBOK</span></div>
+        <div class="info-row"><span>Field</span><span>LIBRARY INFORMATIC</span></div>
+        <div class="info-row"><span>Email</span><span>irfannakki1@gmail.com</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENT -->
+  <section class="achievement-section" id="achievement">
+    <div style="max-width:1100px; margin:0 auto;">
+      <p class="section-label">What I've done</p>
+      <h2>Achievement</h2>
+    </div>
+    <div class="achievement-grid">
+      <div class="ach-card">
+        <img class="ach-photo" src="picture/achievement1.jpeg" alt="Achievement 1">
+        <div class="ach-body">
+          <p class="ach-year">2023</p>
+          <p class="ach-title">MODEL PERFECT</p>
+          <p class="ach-desc">I got this achievement after five years of service at my school library. It was one of the best achievements I ever had during my school days.</p>
+        </div>
+      </div>
+      <div class="ach-card">
+        <img class="ach-photo" src="picture/achievement2.jpeg" alt="Achievement 2">
+        <div class="ach-body">
+          <p class="ach-year">2023</p>
+          <p class="ach-title">SPM ACHIEVEMENT</p>
+          <p class="ach-desc">For me this achievement is very hard to forget — in my school days I never got more than five A's in an examination. My family was so proud of me.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-section" id="video">
+    <div class="video-inner">
+      <p class="section-label">Watch</p>
+      <h2>My Video</h2>
+      <p>A short clip or introduction — let them hear it from you directly.</p>
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/D1Fzx8O8huA?si=jmvKufguIOYjsMBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Irfan &mdash; All rights reserved.
+  </footer>
+
+  <script>
+    let current = 0;
+    const total = 5;
+
+    function update() {
+      document.getElementById('slides').style.transform = `translateX(-${current * 20}%)`;
+      document.querySelectorAll('.dot').forEach((d, i) => {
+        d.classList.toggle('active', i === current);
+      });
+    }
+
+    function move(dir) {
+      current = (current + dir + total) % total;
+      update();
+    }
+
+    function goTo(n) {
+      current = n;
+      update();
+    }
+
+    setInterval(() => move(1), 4000);
+  </script>
+
+</body>
+</html>
